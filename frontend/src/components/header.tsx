@@ -15,7 +15,7 @@ export function Header() {
 
   return (
     // Desktop
-    <header>
+    <header className="sticky top-0 z-50">
       <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-[240px] hidden md:flex">
         <div className="flex gap-x-10 text-[12px] font-semibold">
           <a href="#" className="flex items-center">

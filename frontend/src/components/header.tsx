@@ -16,24 +16,24 @@ export function Header() {
   return (
     // Desktop
     <header className="sticky top-0 z-50">
-      <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-[240px] hidden md:flex">
-        <div className="flex gap-x-10 text-[12px] font-semibold">
+      <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-60 hidden md:flex">
+        <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[11px] lg:text-[12px] font-semibold">
           <a href="#" className="flex items-center">
-            <Phone size={16} />
-            <span className="ml-2">+51 950 268 312</span>
+            <Phone size={14} className="lg:w-4 lg:h-4" />
+            <span className="ml-1 lg:ml-2">+51 950 268 312</span>
           </a>
           <a href="#" className="flex items-center">
-            <Mail size={16} />
-            <span className="ml-2">administracion@ifcet.com.pe</span>
+            <Mail size={14} className="lg:w-4 lg:h-4" />
+            <span className="ml-1 lg:ml-2">administracion@ifcet.com.pe</span>
           </a>
           <a href="#" className="flex items-center">
-            <MapPin size={16} />
-            <span className="ml-2">Calle las Rosas #110</span>
+            <MapPin size={14} className="lg:w-4 lg:h-4" />
+            <span className="ml-1 lg:ml-2">Calle las Rosas #110</span>
           </a>
         </div>
       </div>
 
-      <div className="bg-[#eaebf1] text-ifcet-primary items-center px-4 md:px-[240px] min-h-[70px] flex">
+      <div className="bg-[#eaebf1] text-ifcet-primary items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-60 min-h-[70px] flex">
         {/* Móvil: Logo y hamburguesa con justify-between */}
         <div className="flex justify-between items-center w-full md:hidden">
           <Link to="/" className="flex-shrink-0">
@@ -57,21 +57,21 @@ export function Header() {
         </div>
 
         {/* Desktop: Estructura original */}
-        <div className="hidden md:flex justify-between items-center w-full gap-x-10">
-          <div className="flex gap-x-10 text-[16px] font-bold items-center">
+        <div className="hidden md:flex justify-between items-center w-full gap-x-4 lg:gap-x-6 xl:gap-x-8">
+          <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[14px] lg:text-[15px] xl:text-[16px] font-bold items-center">
             <Link to="/" className="flex-shrink-0">
               <img src={logo} alt="Logo" className="h-[30px] w-auto mt-1" />
             </Link>
-            <div className="flex gap-x-10 text-[16px] font-bold">
-              <Link to="/docentes">Docentes</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/noticias">Noticias</Link>
-              <Link to="/cursos">Cursos</Link>
+            <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[14px] lg:text-[15px] xl:text-[16px] font-bold">
+              <Link to="/docentes" className="whitespace-nowrap">Docentes</Link>
+              <Link to="/blog" className="whitespace-nowrap">Blog</Link>
+              <Link to="/noticias" className="whitespace-nowrap">Noticias</Link>
+              <Link to="/cursos" className="whitespace-nowrap">Cursos</Link>
             </div>
           </div>
-          <div className="flex gap-x-10 text-[16px] font-bold">
-            <Link to="/biblioteca">Biblioteca</Link>
-            <Link to="/aula-virtual">Aula Virtual</Link>
+          <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[14px] lg:text-[15px] xl:text-[16px] font-bold">
+            <Link to="/biblioteca" className="whitespace-nowrap">Biblioteca</Link>
+            <Link to="/aula-virtual" className="whitespace-nowrap">Aula Virtual</Link>
           </div>
         </div>
       </div>

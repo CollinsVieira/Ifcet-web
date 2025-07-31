@@ -1,86 +1,135 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-import './swipermodules.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import "./swipermodules.css";
+import personas from "../assets/4-personas.webp";
+import personasMobile from "../assets/4-personas-mobile.webp";
+import personapc from "../assets/personapc.webp";
+import { Link } from "react-router-dom";
+
+const destacados = [
+  {
+    title: "Peritaje Contable",
+    link: "",
+  },
+  {
+    title: "Contabilidad de Costos",
+    link: "",
+  },
+  {
+    title: "Contabilidad Comercial",
+    link: "",
+  },
+  {
+    title: "Presupuesto Público",
+    link: "",
+  },
+];
 
 export function HeroSlider() {
-    const slides = [
-        {
-            title: "Formación Profesional de Excelencia",
-            subtitle: "Desarrolla las habilidades que necesitas para el futuro",
-            description: "En IFCET te preparamos para los desafíos del mundo laboral con programas actualizados y docentes expertos.",
-            image: "../assets/RV.jpg"
-        },
-        {
-            title: "Cursos Especializados",
-            subtitle: "Aprende de los mejores profesionales",
-            description: "Nuestros cursos están diseñados para brindarte conocimientos prácticos y teóricos de alta calidad.",
-            image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200&h=800&fit=crop"
-        },
-        {
-            title: "Infraestructura Moderna",
-            subtitle: "Ambientes de aprendizaje óptimos",
-            description: "Contamos con laboratorios equipados y tecnología de vanguardia para tu formación profesional.",
-            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop"
-        },
-        {
-            title: "Certificaciones Reconocidas",
-            subtitle: "Títulos con validez oficial",
-            description: "Al finalizar nuestros programas obtienes certificaciones reconocidas por instituciones educativas.",
-            image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=800&fit=crop"
-        },
-        {
-            title: "Bolsa de Trabajo",
-            subtitle: "Conectamos talento con oportunidades",
-            description: "Nuestros egresados tienen acceso a nuestra red de empresas asociadas y oportunidades laborales.",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop"
-        }
-    ];
-
-    const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-        // Si la imagen falla, usar una imagen de respaldo
-        const target = e.target as HTMLImageElement;
-        target.src = "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop";
-    };
-
-    return (
-        <div className="h-screen w-full">
-            <Swiper
-                pagination={{
-                    dynamicBullets: true,
-                    clickable: true,
-                }}
-                navigation={true}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                }}
-                modules={[Pagination, Navigation, Autoplay]}
-                className="h-full w-full"
-                loop={true}
+  return (
+    <div className="h-[80vh] md:h-[65vh]  w-full">
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+          clickable: true,
+        }}
+        navigation={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Navigation, Autoplay]}
+        className="h-full w-full"
+        loop={true}
+      >
+        <SwiperSlide>
+          <section className="bg-[#101fd2] h-full w-full">
+            <div
+              className="w-full h-full flex justify-center items-center flex-col text-white gap-y-4
+             md:flex-row-reverse"
             >
-                {slides.map((slide, index) => (
-                    <SwiperSlide key={index} className="relative">
-                        <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
-                        <img 
-                            src={slide.image} 
-                            alt={slide.title}
-                            className="absolute inset-0 w-full h-full object-cover"
-                            onError={handleImageError}
-                        />
-                        <div className="relative z-20 flex flex-col justify-center items-center h-full text-white text-center px-8">
-                            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                                {slide.title}
-                            </h1>
-                            <p className="text-xl md:text-2xl font-semibold mb-4 max-w-2xl">
-                                {slide.subtitle}
-                            </p>
-                            <p className="text-lg md:text-xl max-w-3xl leading-relaxed">
-                                {slide.description}
-                            </p>
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
-    );
-} 
+              <img
+                src={personapc}
+                alt="chica con una computadora"
+                className="object-cover order-2"
+              />
+              <div
+                className="flex flex-col gap-y-4 md:text-left 
+              md:w-[30%] md:p-10 md:bg-white/15 md:rounded-2xl md:border-1 md:border-white/30"
+              >
+                <h1 className="text-4xl font-bold md:order-2">
+                  Expertos que transforman el conocimiento
+                </h1>
+                <p className="text-lg md:order-3">
+                  Cursos especializados en finanzas y contabilidad
+                </p>
+                <a
+                  href="#"
+                  className="text-sm hidden md:block bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit"
+                >
+                  ¡Contactanos!
+                </a>
+              </div>
+              <a
+                href="#"
+                className="text-sm bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit self-center md:hidden"
+              >
+                ¡Contactanos!
+              </a>
+            </div>
+          </section>
+        </SwiperSlide>
+        <SwiperSlide>
+          <section className="h-full w-full bg-[#101fd2] flex justify-center items-center relative">
+            <div className="md:block hidden">
+              <img
+                src={personas}
+                alt="4 docentes"
+                className="w-full h-full object-fit absolute inset-0"
+              />
+            </div>
+            <div className="md:hidden flex justify-center items-center flex-col gap-y-4 text-white">
+              <h1 className="text-4xl font-bold">
+                Conoce nuestros cursos destacados
+              </h1>
+              <p className="text-lg">Especializate con los mejores del Perú.</p>
+              <img
+                src={personasMobile}
+                alt="2 docentes"
+                className="w-full h-full object-contain pl-4"
+              />
+              <a
+                href="#"
+                className="text-sm bg-[#ffb403] text-white px-4 py-2 rounded-lg"
+              >
+                ¡Conoce más!
+              </a>
+            </div>
+            <div className="md:flex flex-row gap-x-4 pb-10 items-end justify-between h-full relative z-10 px-10 w-full hidden">
+              {destacados.map((destacado, index) => (
+                <div
+                  className="flex flex-col gap-y-2 flex-1 items-center"
+                  key={index}
+                >
+                  <div className="w-fit flex flex-col bg-black/50 px-6 py-3 rounded-lg border-white border-1 text-center">
+                    <h1 className="text-white text-pretty">
+                      {destacado.title}
+                    </h1>
+                  </div>
+                  <div className="w-full flex justify-center mt-2">
+                    <Link
+                      to={destacado.link}
+                      className="bg-white text-black px-4 py-1 rounded-lg border-black text-sm"
+                    >
+                      Más información
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}

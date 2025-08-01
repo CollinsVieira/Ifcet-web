@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import WhatsApp from "../utils/WhatsApp";
 
 export function WhatsAppButton() {
   const handleWhatsAppClick = () => {
@@ -15,7 +15,7 @@ export function WhatsAppButton() {
         className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 group"
         aria-label="Contactar por WhatsApp"
       >
-        <MessageCircle size={28} className="group-hover:animate-pulse" />
+        <WhatsApp className="group-hover:animate-pulse" />
         
         {/* Tooltip */}
         <div className="absolute bottom-full right-0 mb-2 px-3 py-2 bg-gray-800 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">

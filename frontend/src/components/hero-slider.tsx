@@ -27,7 +27,7 @@ const destacados = [
 
 export function HeroSlider() {
   return (
-    <div className="h-[80vh] md:h-[65vh]  w-full">
+    <div className="h-[calc(100vh-70px)] md:h-[75vh] w-full overflow-x-hidden">
       <Swiper
         pagination={{
           dynamicBullets: true,
@@ -45,13 +45,13 @@ export function HeroSlider() {
         <SwiperSlide>
           <section className="bg-[#101fd2] h-full w-full">
             <div
-              className="w-full h-full flex justify-center items-center flex-col text-white gap-y-4
+              className="w-full h-full flex lg:justify-center items-center flex-col text-white gap-y-4
              md:flex-row-reverse"
             >
               <img
                 src={personapc}
                 alt="chica con una computadora"
-                className="object-cover order-2"
+                className="order-2 lg:object-contain sm:object-cover"
               />
               <div
                 className="flex flex-col gap-y-4 md:text-left 
@@ -61,11 +61,11 @@ export function HeroSlider() {
                   Expertos que transforman el conocimiento
                 </h1>
                 <p className="text-lg md:order-3">
-                  Cursos especializados en finanzas y contabilidad
+                  Cursos especializados en tributación, finanzas y contabilidad
                 </p>
                 <a
                   href="#"
-                  className="text-sm hidden md:block bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit"
+                  className="text-sm hidden md:block bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit hover:scale-105 transition-all duration-300"
                 >
                   ¡Contactanos!
                 </a>
@@ -82,10 +82,11 @@ export function HeroSlider() {
         <SwiperSlide>
           <section className="h-full w-full bg-[#101fd2] flex justify-center items-center relative">
             <div className="md:block hidden">
+              {/* imagen para desktop */}
               <img
                 src={personas}
                 alt="4 docentes"
-                className="w-full h-full object-fit absolute inset-0"
+                className="w-full h-full object-contain object-bottom absolute inset-0"
               />
             </div>
             <div className="md:hidden flex justify-center items-center flex-col gap-y-4 text-white">
@@ -93,6 +94,7 @@ export function HeroSlider() {
                 Conoce nuestros cursos destacados
               </h1>
               <p className="text-lg">Especializate con los mejores del Perú.</p>
+              {/* imagen para mobile */}
               <img
                 src={personasMobile}
                 alt="2 docentes"

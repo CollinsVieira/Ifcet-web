@@ -75,7 +75,7 @@ export function Cursos() {
   ];
 
   return (
-    <section className="bg-white py-8">
+    <section className="bg-white md:py-8 overflow-x-hidden">
       <div className="container mx-auto">
         <Swiper
           slidesPerView={1}
@@ -99,7 +99,7 @@ export function Cursos() {
               spaceBetween: 30,
             },
             1280: {
-              slidesPerView: 3.5,
+              slidesPerView: 3,
               spaceBetween: 40,
             },
           }}

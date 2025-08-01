@@ -5,7 +5,7 @@ import hamburger from "../assets/hamburger.svg";
 import close from "../assets/close.svg";
 import WhatsApp from "../utils/WhatsApp.tsx";
 import Facebook from "../utils/Facebook.tsx";
-import Instagram from "../utils/Instagram.tsx";
+import Instagram from "../utils/Instagram.tsx"; 
 import LinkedIn from "../utils/LinkedIn.tsx";
 import TikTok from "../utils/Tiktok.tsx";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ export function Header() {
   return (
     // Desktop
     <header className="sticky top-0 z-50">
-      <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-60 hidden md:flex">
+      <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-6 lg:px-8 xl:px-12 hidden md:flex">
         <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[11px] lg:text-[12px] font-semibold">
           <a href="#" className="flex items-center">
             <Phone size={14} className="lg:w-4 lg:h-4" />
@@ -33,7 +33,7 @@ export function Header() {
         </div>
       </div>
 
-      <div className="bg-[#eaebf1] text-ifcet-primary items-center px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-60 min-h-[70px] flex">
+      <div className="bg-[#eaebf1] text-ifcet-primary items-center px-4 md:px-6 lg:px-8 xl:px-12 min-h-[70px] flex">
         {/* Móvil: Logo y hamburguesa con justify-between */}
         <div className="flex justify-between items-center w-full md:hidden">
           <Link to="/" className="flex-shrink-0">

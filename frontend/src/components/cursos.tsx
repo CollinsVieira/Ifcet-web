@@ -8,8 +8,8 @@ export function Cursos() {
   const cursos = cursosData;
 
   return (
-    <section className="bg-white md:py-8 overflow-x-hidden">
-      <div className="container mx-auto">
+    <section className="bg-white overflow-x-hidden w-full">
+      <div className="w-full">
         <Swiper
           slidesPerView={1}
           spaceBetween={20}
@@ -28,12 +28,16 @@ export function Cursos() {
               spaceBetween: 30,
             },
             1024: {
-              slidesPerView: 3.2,
-              spaceBetween: 30,
+              slidesPerView: 2.5,
+              spaceBetween: 20,
             },
             1280: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            1536: {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 20,
             },
           }}
           modules={[FreeMode, Pagination]}

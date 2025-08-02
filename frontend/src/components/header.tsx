@@ -5,7 +5,7 @@ import hamburger from "../assets/hamburger.svg";
 import close from "../assets/close.svg";
 import WhatsApp from "../utils/WhatsApp.tsx";
 import Facebook from "../utils/Facebook.tsx";
-import Instagram from "../utils/Instagram.tsx"; 
+import Instagram from "../utils/Instagram.tsx";
 import LinkedIn from "../utils/LinkedIn.tsx";
 import TikTok from "../utils/Tiktok.tsx";
 import { Link } from "react-router-dom";
@@ -14,19 +14,37 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // Desktop
-    <header className="sticky top-0 z-50">
+    <header 
+      className="fixed top-0 left-0 right-0 z-50 w-full fixed-header"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999,
+        width: '100%'
+      }}
+    >
       <div className="bg-[#010101] text-white min-h-[40px] items-center px-4 md:px-6 lg:px-8 xl:px-12 hidden md:flex">
         <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[11px] lg:text-[12px] font-semibold">
-          <a href="#" className="flex items-center">
+          <a
+            href="#"
+            className="flex items-center hover:text-[#fab500] transition-colors"
+          >
             <Phone size={14} className="lg:w-4 lg:h-4" />
             <span className="ml-1 lg:ml-2">+51 950 268 312</span>
           </a>
-          <a href="#" className="flex items-center">
+          <a
+            href="#"
+            className="flex items-center hover:text-[#fab500] transition-colors"
+          >
             <Mail size={14} className="lg:w-4 lg:h-4" />
             <span className="ml-1 lg:ml-2">administracion@ifcet.com.pe</span>
           </a>
-          <a href="#" className="flex items-center">
+          <a
+            href="#"
+            className="flex items-center hover:text-[#fab500] transition-colors"
+          >
             <MapPin size={14} className="lg:w-4 lg:h-4" />
             <span className="ml-1 lg:ml-2">Calle las Rosas #110</span>
           </a>
@@ -63,15 +81,45 @@ export function Header() {
               <img src={logo} alt="Logo" className="h-[30px] w-auto mt-1" />
             </Link>
             <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[14px] lg:text-[15px] xl:text-[16px] font-bold">
-              <Link to="/docentes" className="whitespace-nowrap">Docentes</Link>
-              <Link to="/blog" className="whitespace-nowrap">Blog</Link>
-              <Link to="/noticias" className="whitespace-nowrap">Noticias</Link>
-              <Link to="/cursos" className="whitespace-nowrap">Cursos</Link>
+              <Link
+                to="/docentes"
+                className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+              >
+                Docentes
+              </Link>
+              <Link
+                to="/blog"
+                className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+              >
+                Blog
+              </Link>
+              <Link
+                to="/noticias"
+                className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+              >
+                Noticias
+              </Link>
+              <Link
+                to="/cursos"
+                className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+              >
+                Cursos
+              </Link>
             </div>
           </div>
           <div className="flex gap-x-4 lg:gap-x-6 xl:gap-x-8 text-[14px] lg:text-[15px] xl:text-[16px] font-bold">
-            <Link to="/biblioteca" className="whitespace-nowrap">Biblioteca</Link>
-            <Link to="/aula-virtual" className="whitespace-nowrap">Aula Virtual</Link>
+            <Link
+              to="/biblioteca"
+              className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+            >
+              Biblioteca
+            </Link>
+            <Link
+              to="/aula-virtual"
+              className="whitespace-nowrap transition-colors hover:bg-white hover:text-ifcet-primary rounded-md px-2 py-1"
+            >
+              Aula Virtual
+            </Link>
           </div>
         </div>
       </div>

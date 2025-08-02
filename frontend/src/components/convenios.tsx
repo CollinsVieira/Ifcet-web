@@ -13,12 +13,12 @@ export default function Convenios() {
       </div>
       <div className="relative bg-white rounded-2xl p-4 overflow-x-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="bg-[#f4f8f9] md:w-1/2 w-[30%] h-auto rounded-full flex items-center justify-center mx-auto mb-3">
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="bg-[#f4f8f9] md:min-w-[100px] md:w-1/2 w-[30%] md:h-1/2  min-h-[100px] rounded-full flex items-center justify-center mx-auto mb-3">
               <img
                 src={CPSM}
                 alt="convenio"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>
@@ -38,12 +38,12 @@ export default function Convenios() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="bg-[#f4f8f9] md:w-1/2 w-[30%] h-auto rounded-full flex items-center justify-center mx-auto mb-3">
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <div className="bg-[#f4f8f9] md:min-w-[100px] md:w-1/2 w-[30%] md:h-1/2 min-h-[100px] rounded-full flex items-center justify-center mx-auto mb-3">
               <img
                 src={CPL}
                 alt="convenio"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <div>

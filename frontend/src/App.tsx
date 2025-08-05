@@ -6,6 +6,7 @@ import { Biblioteca } from "./pages/biblioteca";
 import { CursosPage } from "./pages/cursos";
 import { Noticias } from "./pages/noticias";
 import { TestSticky } from "./pages/test-sticky";
+import { BlogPage } from "./pages/blog";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/cursos" element={<CursosPage />} />
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/test-sticky" element={<TestSticky />} />
+          <Route path="/blog" element={<BlogPage />} />
         </Routes>
       </Layout>
     </Router>

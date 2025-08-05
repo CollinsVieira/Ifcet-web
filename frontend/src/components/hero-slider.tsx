@@ -27,7 +27,7 @@ const destacados = [
 
 export function HeroSlider() {
   return (
-    <div className="h-[calc(100vh-70px)] md:h-[75vh] w-full overflow-x-hidden">
+    <div className="h-[calc(100vh-110px)] md:h-[75vh] w-full overflow-x-hidden">
       <Swiper
         pagination={{
           dynamicBullets: true,

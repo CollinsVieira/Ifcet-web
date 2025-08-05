@@ -1,0 +1,154 @@
+{
+  "categories": [
+    {
+      "id": "contabilidad-basica",
+      "name": "Contabilidad Básica",
+      "description": "Conceptos generales y fundamentos de la contabilidad",
+      "color": "bg-blue-500"
+    },
+    {
+      "id": "impuestos-fiscales",
+      "name": "Impuestos y Obligaciones Fiscales",
+      "description": "Información sobre impuestos y obligaciones fiscales",
+      "color": "bg-red-500"
+    },
+    {
+      "id": "herramientas-software",
+      "name": "Herramientas Contables y Software",
+      "description": "Software y herramientas para la gestión contable",
+      "color": "bg-green-500"
+    },
+    {
+      "id": "pymes-emprendedores",
+      "name": "Consejos para Pymes y Emprendedores",
+      "description": "Consejos prácticos para pequeñas empresas",
+      "color": "bg-purple-500"
+    },
+    {
+      "id": "actualizaciones-legales",
+      "name": "Actualizaciones Legales y Normativas",
+      "description": "Cambios en leyes y normativas contables",
+      "color": "bg-orange-500"
+    },
+    {
+      "id": "contabilidad-internacional",
+      "name": "Contabilidad Internacional",
+      "description": "Estándares y prácticas contables internacionales",
+      "color": "bg-indigo-500"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Fundamentos de la Contabilidad: Los Principios Básicos",
+      "excerpt": "Descubre los principios fundamentales que rigen la contabilidad y cómo aplicarlos en tu negocio de manera efectiva.",
+      "content": "La contabilidad es el lenguaje de los negocios. Para comprender completamente cómo funciona tu empresa, necesitas entender los principios básicos de la contabilidad. En este artículo, exploraremos los conceptos fundamentales que todo empresario debe conocer.\n\n## Los Principios Básicos\n\n### 1. Ecuación Contable\nLa ecuación contable es la base de toda la contabilidad:\n**Activos = Pasivos + Patrimonio Neto**\n\nEsta ecuación debe mantenerse siempre en equilibrio. Los activos representan lo que posee la empresa, los pasivos son las deudas, y el patrimonio neto es la inversión de los propietarios.\n\n### 2. Principio de Partida Doble\nCada transacción afecta al menos dos cuentas. Por ejemplo, cuando compras inventario con efectivo:\n- Aumenta el inventario (activo)\n- Disminuye el efectivo (activo)\n\n### 3. Principio de Conservadurismo\nSiempre es mejor subestimar las ganancias y sobreestimar las pérdidas. Esto protege a la empresa de tomar decisiones basadas en información optimista.\n\n## Aplicación Práctica\n\nEstos principios se aplican en el día a día de cualquier negocio. Desde el registro de una simple venta hasta la preparación de estados financieros complejos, todos siguen estos fundamentos.\n\n## Conclusión\n\nEntender estos principios básicos te permitirá tomar mejores decisiones financieras y mantener un control efectivo sobre las finanzas de tu empresa.",
+      "category": "contabilidad-basica",
+      "author": "María González",
+      "authorRole": "Contadora Pública",
+      "publishedAt": "2024-01-15",
+      "readTime": "8 min",
+      "image": "/src/assets/blog/contabilidad-basica.jpg",
+      "featured": true,
+      "tags": ["fundamentos", "principios", "ecuación contable"]
+    },
+    {
+      "id": 2,
+      "title": "IVA: Todo lo que Necesitas Saber para tu Empresa",
+      "excerpt": "Guía completa sobre el Impuesto al Valor Agregado: cálculo, declaración y obligaciones para empresas.",
+      "content": "El IVA es uno de los impuestos más importantes que afectan a las empresas. Comprender cómo funciona es esencial para cumplir con las obligaciones fiscales y optimizar la gestión financiera.\n\n## ¿Qué es el IVA?\n\nEl Impuesto al Valor Agregado es un impuesto indirecto que se aplica sobre el consumo de bienes y servicios. Es un impuesto que se traslada al consumidor final.\n\n## Tipos de IVA\n\n### IVA General (16%)\nSe aplica a la mayoría de bienes y servicios.\n\n### IVA Reducido (8%)\nSe aplica a ciertos bienes y servicios específicos como medicamentos y alimentos.\n\n### IVA Cero (0%)\nSe aplica a exportaciones y ciertos productos básicos.\n\n## Cálculo del IVA\n\n### Para Empresas\n- **IVA Cobrado**: El que facturas a tus clientes\n- **IVA Pagado**: El que pagas a tus proveedores\n- **IVA a Pagar**: IVA Cobrado - IVA Pagado\n\n## Declaración Mensual\n\nTodas las empresas deben presentar declaraciones mensuales de IVA, incluso si no tienen operaciones.\n\n## Conclusión\n\nEl manejo correcto del IVA es fundamental para evitar sanciones y mantener una gestión fiscal saludable.",
+      "category": "impuestos-fiscales",
+      "author": "Carlos Mendoza",
+      "authorRole": "Especialista Fiscal",
+      "publishedAt": "2024-01-10",
+      "readTime": "12 min",
+      "image": "/src/assets/blog/iva-empresas.jpg",
+      "featured": true,
+      "tags": ["IVA", "impuestos", "fiscal"]
+    },
+    {
+      "id": 3,
+      "title": "Los Mejores Software Contables para Pymes en 2024",
+      "excerpt": "Revisión de las mejores herramientas contables del mercado, sus características y precios para pequeñas empresas.",
+      "content": "En la era digital, contar con un buen software contable es fundamental para la gestión eficiente de cualquier empresa. Te presentamos las mejores opciones para Pymes en 2024.\n\n## Criterios de Evaluación\n\n- Facilidad de uso\n- Funcionalidades\n- Precio\n- Soporte técnico\n- Integración con otros sistemas\n\n## Top 5 Software Contables\n\n### 1. QuickBooks\n**Precio**: Desde $25/mes\n**Características**:\n- Interfaz intuitiva\n- Integración con bancos\n- Generación de reportes\n- Facturación electrónica\n\n### 2. Xero\n**Precio**: Desde $30/mes\n**Características**:\n- Software en la nube\n- Colaboración en tiempo real\n- Múltiples monedas\n- Integración con más de 800 apps\n\n### 3. Sage 50\n**Precio**: Desde $50/mes\n**Características**:\n- Software robusto\n- Gestión de inventarios\n- Nómina integrada\n- Reportes avanzados\n\n### 4. FreshBooks\n**Precio**: Desde $15/mes\n**Características**:\n- Enfoque en facturación\n- Gestión de proyectos\n- Tiempo y gastos\n- Interfaz móvil\n\n### 5. Wave\n**Precio**: Gratuito\n**Características**:\n- Completamente gratuito\n- Facturación\n- Contabilidad básica\n- Reportes simples\n\n## Recomendación por Tamaño de Empresa\n\n- **Microempresas**: Wave o FreshBooks\n- **Pymes pequeñas**: QuickBooks o Xero\n- **Pymes medianas**: Sage 50\n\n## Conclusión\n\nLa elección del software dependerá de las necesidades específicas de tu empresa, pero cualquiera de estas opciones te ayudará a mejorar la gestión contable.",
+      "category": "herramientas-software",
+      "author": "Ana Rodríguez",
+      "authorRole": "Consultora de Sistemas",
+      "publishedAt": "2024-01-08",
+      "readTime": "15 min",
+      "image": "/src/assets/blog/software-contable.jpg",
+      "featured": true,
+      "tags": ["software", "tecnología", "pymes"]
+    },
+    {
+      "id": 4,
+      "title": "10 Consejos Financieros para Emprendedores",
+      "excerpt": "Consejos prácticos para que los emprendedores mantengan sus finanzas saludables desde el primer día.",
+      "content": "Ser emprendedor es emocionante, pero también puede ser desafiante, especialmente en el aspecto financiero. Estos consejos te ayudarán a mantener tu negocio financieramente saludable.\n\n## 1. Separa Finanzas Personales y Empresariales\n\nNunca mezcles tus finanzas personales con las de tu empresa. Abre una cuenta bancaria separada desde el primer día.\n\n## 2. Mantén un Presupuesto\n\nCrea un presupuesto mensual y revísalo regularmente. Esto te ayudará a identificar gastos innecesarios.\n\n## 3. Controla el Flujo de Efectivo\n\nEl flujo de efectivo es más importante que las ganancias. Asegúrate de tener suficiente efectivo para operar.\n\n## 4. Automatiza la Contabilidad\n\nUsa software contable desde el inicio. No esperes a que tu empresa crezca para implementarlo.\n\n## 5. Establece Precios Correctos\n\nNo subestimes tus precios. Calcula todos los costos, incluyendo tu tiempo.\n\n## 6. Construye un Fondo de Emergencia\n\nMantén al menos 3-6 meses de gastos operativos en reserva.\n\n## 7. Invierte en tu Educación\n\nSigue aprendiendo sobre finanzas y contabilidad. El conocimiento es tu mejor inversión.\n\n## 8. Revisa Regularmente los Números\n\nRevisa tus estados financieros al menos mensualmente.\n\n## 9. Planifica los Impuestos\n\nNo dejes los impuestos para el último momento. Planifica y ahorra para ellos.\n\n## 10. Busca Asesoría Profesional\n\nNo tengas miedo de contratar un contador o asesor financiero cuando sea necesario.\n\n## Conclusión\n\nImplementar estos consejos desde el inicio te ayudará a construir una base financiera sólida para tu empresa.",
+      "category": "pymes-emprendedores",
+      "author": "Luis Pérez",
+      "authorRole": "Consultor Empresarial",
+      "publishedAt": "2024-01-05",
+      "readTime": "10 min",
+      "image": "/src/assets/blog/emprendedores.jpg",
+      "featured": false,
+      "tags": ["emprendimiento", "finanzas", "consejos"]
+    },
+    {
+      "id": 5,
+      "title": "Nuevas Normativas Contables 2024: Lo que Debes Saber",
+      "excerpt": "Resumen de los cambios más importantes en las normativas contables que entran en vigor este año.",
+      "content": "El 2024 trae importantes cambios en las normativas contables que afectarán a todas las empresas. Es fundamental estar al día para cumplir con las nuevas obligaciones.\n\n## Principales Cambios\n\n### 1. Nuevos Requisitos de Información\n\nLas empresas ahora deben proporcionar información más detallada sobre:\n- Activos intangibles\n- Pasivos contingentes\n- Transacciones con partes relacionadas\n\n### 2. Cambios en la Valuación de Inventarios\n\nSe han actualizado los métodos de valuación permitidos, con mayor énfasis en el método FIFO.\n\n### 3. Nuevas Disposiciones sobre Impuestos Diferidos\n\nSe han simplificado las reglas para el cálculo de impuestos diferidos.\n\n### 4. Requisitos de Auditoría\n\nLas empresas medianas ahora requieren auditoría externa anual.\n\n## Impacto en las Empresas\n\n### Pymes\n- Mayor carga administrativa\n- Necesidad de actualizar sistemas\n- Posibles costos adicionales\n\n### Grandes Empresas\n- Reportes más complejos\n- Mayor transparencia requerida\n- Nuevos controles internos\n\n## Fechas Importantes\n\n- **Marzo 2024**: Primera declaración con nuevas normas\n- **Junio 2024**: Auditorías obligatorias\n- **Diciembre 2024**: Reportes anuales\n\n## Recomendaciones\n\n1. Actualiza tu software contable\n2. Capacita a tu equipo\n3. Consulta con un especialista\n4. Revisa tus políticas contables\n\n## Conclusión\n\nEstos cambios buscan mayor transparencia y comparabilidad en la información financiera. La preparación anticipada es clave.",
+      "category": "actualizaciones-legales",
+      "author": "Dra. Patricia Silva",
+      "authorRole": "Abogada Fiscal",
+      "publishedAt": "2024-01-03",
+      "readTime": "14 min",
+      "image": "/src/assets/blog/normativas-2024.jpg",
+      "featured": false,
+      "tags": ["normativas", "2024", "cambios legales"]
+    },
+    {
+      "id": 6,
+      "title": "Estándares Internacionales de Contabilidad: IFRS vs GAAP",
+      "excerpt": "Comparación entre los principales estándares contables internacionales y su aplicación en diferentes países.",
+      "content": "En un mundo globalizado, entender los diferentes estándares contables internacionales es fundamental para empresas que operan en múltiples países.\n\n## Principales Estándares\n\n### IFRS (International Financial Reporting Standards)\n\n**Países que lo usan**:\n- Unión Europea\n- Australia\n- Canadá\n- Brasil\n- México\n\n**Características**:\n- Basado en principios\n- Enfoque en la sustancia económica\n- Mayor flexibilidad\n\n### GAAP (Generally Accepted Accounting Principles)\n\n**Países que lo usan**:\n- Estados Unidos\n- Japón\n\n**Características**:\n- Basado en reglas\n- Más detallado\n- Menor flexibilidad\n\n## Diferencias Principales\n\n### 1. Valuación de Inventarios\n- **IFRS**: Prohíbe LIFO\n- **GAAP**: Permite LIFO\n\n### 2. Desarrollo de Software\n- **IFRS**: Capitalizable si cumple criterios\n- **GAAP**: Capitalizable más fácilmente\n\n### 3. Arrendamientos\n- **IFRS**: Todos los arrendamientos en balance\n- **GAAP**: Algunos arrendamientos fuera de balance\n\n## Convergencia\n\nExiste un esfuerzo global para converger ambos estándares, aunque el proceso es lento.\n\n## Implicaciones para Empresas\n\n### Multinacionales\n- Necesitan preparar estados en múltiples formatos\n- Costos adicionales de conversión\n- Mayor complejidad en reportes\n\n### Empresas Locales\n- Pueden verse afectadas por cambios en estándares\n- Necesidad de adaptación gradual\n\n## Conclusión\n\nLa comprensión de estos estándares es esencial para la toma de decisiones financieras en un contexto global.",
+      "category": "contabilidad-internacional",
+      "author": "Dr. Roberto Torres",
+      "authorRole": "Profesor de Contabilidad Internacional",
+      "publishedAt": "2024-01-01",
+      "readTime": "18 min",
+      "image": "/src/assets/blog/estandares-internacionales.jpg",
+      "featured": false,
+      "tags": ["IFRS", "GAAP", "internacional"]
+    },
+    {
+      "id": 7,
+      "title": "Cómo Interpretar un Balance General",
+      "excerpt": "Guía paso a paso para entender y analizar el balance general de tu empresa.",
+      "content": "El balance general es uno de los estados financieros más importantes. Aprende a interpretarlo para tomar mejores decisiones empresariales.\n\n## ¿Qué es el Balance General?\n\nEs una fotografía de la situación financiera de la empresa en un momento específico. Muestra activos, pasivos y patrimonio neto.\n\n## Estructura del Balance\n\n### Activos\n**Activos Corrientes**:\n- Efectivo y equivalentes\n- Cuentas por cobrar\n- Inventarios\n- Gastos pagados por anticipado\n\n**Activos No Corrientes**:\n- Propiedades, planta y equipo\n- Activos intangibles\n- Inversiones a largo plazo\n\n### Pasivos\n**Pasivos Corrientes**:\n- Cuentas por pagar\n- Impuestos por pagar\n- Préstamos a corto plazo\n\n**Pasivos No Corrientes**:\n- Préstamos a largo plazo\n- Bonos por pagar\n\n### Patrimonio Neto\n- Capital social\n- Utilidades retenidas\n- Reservas\n\n## Ratios Importantes\n\n### Liquidez\n- **Razón corriente**: Activos corrientes / Pasivos corrientes\n- **Prueba ácida**: (Activos corrientes - Inventarios) / Pasivos corrientes\n\n### Solvencia\n- **Razón de deuda**: Pasivos totales / Activos totales\n- **Razón de capital**: Patrimonio neto / Activos totales\n\n### Rentabilidad\n- **ROA**: Utilidad neta / Activos totales\n- **ROE**: Utilidad neta / Patrimonio neto\n\n## Análisis de Tendencias\n\nCompara balances de varios períodos para identificar tendencias y patrones.\n\n## Conclusión\n\nUn balance general bien interpretado te dará insights valiosos sobre la salud financiera de tu empresa.",
+      "category": "contabilidad-basica",
+      "author": "Ing. Carmen Vega",
+      "authorRole": "Analista Financiera",
+      "publishedAt": "2023-12-28",
+      "readTime": "16 min",
+      "image": "/src/assets/blog/balance-general.jpg",
+      "featured": false,
+      "tags": ["balance general", "análisis", "finanzas"]
+    },
+    {
+      "id": 8,
+      "title": "Optimización Fiscal para Pymes: Estrategias Legales",
+      "excerpt": "Estrategias legales para optimizar la carga fiscal de tu empresa sin incurrir en evasión.",
+      "content": "La optimización fiscal es legal y necesaria para la competitividad empresarial. Conoce las estrategias que puedes implementar en tu Pyme.\n\n## Diferencias Clave\n\n### Optimización Fiscal (Legal)\n- Uso de beneficios fiscales\n- Planificación tributaria\n- Estructuras legales eficientes\n\n### Evasión Fiscal (Ilegal)\n- Ocultar ingresos\n- Declarar gastos falsos\n- No pagar impuestos\n\n## Estrategias de Optimización\n\n### 1. Elección del Régimen Fiscal\n\n**Personas Morales**:\n- Mayor tasa pero más deducciones\n- Mejor para empresas grandes\n\n**Personas Físicas**:\n- Tasa menor\n- Menos deducciones\n- Mejor para empresas pequeñas\n\n### 2. Deducciones Autorizadas\n\n- Gastos de operación\n- Inversiones en activos fijos\n- Gastos de personal\n- Gastos de representación\n\n### 3. Créditos Fiscales\n\n- IVA acreditable\n- ISR retenido\n- Impuestos estatales\n\n### 4. Timing de Ingresos y Gastos\n\nPlanifica el momento de reconocer ingresos y gastos para optimizar la carga fiscal anual.\n\n## Consideraciones Importantes\n\n- Siempre consulta con un especialista\n- Mantén documentación completa\n- Revisa cambios en la legislación\n- No tomes decisiones solo por beneficios fiscales\n\n## Conclusión\n\nLa optimización fiscal bien implementada puede mejorar significativamente la rentabilidad de tu empresa.",
+      "category": "impuestos-fiscales",
+      "author": "Lic. Fernando Morales",
+      "authorRole": "Consultor Fiscal",
+      "publishedAt": "2023-12-25",
+      "readTime": "13 min",
+      "image": "/src/assets/blog/optimizacion-fiscal.jpg",
+      "featured": false,
+      "tags": ["optimización", "fiscal", "estrategias"]
+    }
+  ]
+} 

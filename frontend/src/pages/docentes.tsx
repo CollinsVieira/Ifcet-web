@@ -51,8 +51,20 @@ export function Docentes() {
               Conoce a nuestros docentes
             </h1>
           </div>
-            <p className="text-gray-500 text-center lg:text-left pt-4">En IFCET te brindamos la mejor calidad en educación, es por eso que contamos con docentes altamente calificados y con amplia experiencia en el rubro.</p>
           <AnimatedTestimonials testimonials={testimonials} />
+          <p className="text-gray-500 pt-4 max-w-3xl mx-auto text-pretty text-justify">
+            En IFCET, contamos con <b>docentes</b> expertos en contabilidad y
+            altamente calificados con experiencia sólida en contabilidad,
+            tributación, auditoría y gestión empresarial. Estos especialistas,
+            acreditados por la <b>SUNAT</b>, el MEF y universidades reconocidas,
+            lideran cada curso con un enfoque técnico y actualizado. Además,
+            aplican metodologías activas, <b>casos reales</b> y normativa vigente, lo
+            que permite una formación práctica y alineada al entorno laboral
+            actual. Durante las clases en vivo por Zoom, brindan orientación
+            personalizada, resolviendo dudas y guiando tu avance profesional.
+            Aprende con los mejores docentes contables del sistema peruano y
+            fortalece tu carrera desde cualquier lugar del país.
+          </p>
         </main>
         <div className="hidden lg:block">
           <Aside />

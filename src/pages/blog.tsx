@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import blogData from '../data/blog.json';
 import { Aside } from '../components/aside';
 
@@ -25,7 +25,7 @@ interface Category {
 }
 
 export const BlogPage = () => {
-  const [posts, setPosts] = useState<Post[]>(blogData.posts);
+  const [posts] = useState<Post[]>(blogData.posts);
   const [categories] = useState<Category[]>(blogData.categories);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchTerm, setSearchTerm] = useState<string>('');

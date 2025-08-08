@@ -6,7 +6,7 @@ import Convenios from "../components/convenios";
 
 export function Home() {
   return (
-    <div className="w-full pt-[70px] md:pt-[110px]">
+    <div className="w-full">
       {/* Slider */}
       <HeroSlider />
       {/* Slider */}

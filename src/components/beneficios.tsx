@@ -59,10 +59,11 @@ export function Beneficios() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4">
           {beneficios.map((beneficio) => (
             <div key={beneficio.id} className="text-center">
-              <div className="bg-[#101fd2] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 hover:scale-110 transition-all duration-300 hover:bg-[#ffb204]/80">
+              <div className="bg-[#101fd2] w-16 h-16 rounded-full flex items-center 
+              justify-center mx-auto mb-3 hover:scale-110 transition-all duration-300 hover:bg-[#ffb204]/80">
                 <span className="text-white text-2xl ">{beneficio.icon}</span>
               </div>
               <div>

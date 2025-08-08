@@ -40,7 +40,8 @@ const testimonials = [
 ];
 export function Docentes() {
   return (
-    <div className="relative w-full pt-[110px] md:pt-[110px]">
+    // <div className="relative w-full pt-[110px] md:pt-[110px]"></div>
+    <div className="relative w-full">
       <section className="grid grid-cols-1 lg:grid-cols-[1fr_4fr_1fr] grid-rows-1 min-h-screen">
         <div className="hidden lg:block">
           <Aside />
@@ -58,12 +59,12 @@ export function Docentes() {
             tributación, auditoría y gestión empresarial. Estos especialistas,
             acreditados por la <b>SUNAT</b>, el MEF y universidades reconocidas,
             lideran cada curso con un enfoque técnico y actualizado. Además,
-            aplican metodologías activas, <b>casos reales</b> y normativa vigente, lo
-            que permite una formación práctica y alineada al entorno laboral
-            actual. Durante las clases en vivo por Zoom, brindan orientación
-            personalizada, resolviendo dudas y guiando tu avance profesional.
-            Aprende con los mejores docentes contables del sistema peruano y
-            fortalece tu carrera desde cualquier lugar del país.
+            aplican metodologías activas, <b>casos reales</b> y normativa
+            vigente, lo que permite una formación práctica y alineada al entorno
+            laboral actual. Durante las clases en vivo por Zoom, brindan
+            orientación personalizada, resolviendo dudas y guiando tu avance
+            profesional. Aprende con los mejores docentes contables del sistema
+            peruano y fortalece tu carrera desde cualquier lugar del país.
           </p>
         </main>
         <div className="hidden lg:block">

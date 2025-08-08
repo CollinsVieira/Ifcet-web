@@ -1,9 +1,13 @@
 import { Aside } from "../components/aside";
 import { Cursos } from "../components/cursos";
+import { HeroSlider } from "../components/hero-slider";
 
 export function CursosPage() {
   return (
-    <div className="w-full pt-[110px] md:pt-[110px]">
+    <div className="w-full">
+      {/* Slider */}
+      <HeroSlider />
+      {/* Slider */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_4fr_1fr] min-h-screen max-w-full overflow-x-hidden gap-4">
         <aside className="col-span-1 hidden lg:block">
           <Aside />
@@ -31,7 +35,6 @@ export function CursosPage() {
           <Aside />
         </aside>
       </div>
-
     </div>
   );
 }

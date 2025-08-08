@@ -76,7 +76,7 @@ export const BlogPage = () => {
     }
 
     return (
-      <div className="w-full">
+      <div className="w-full pt-[110px] md:pt-[110px]">
         {/* Header del artículo */}
         <div className="bg-white shadow-sm border-b">
           <div className="max-w-4xl mx-auto px-4 py-6">
@@ -313,7 +313,7 @@ export const BlogPage = () => {
   return (
     <div className="w-full">
       {/* Hero Section con Bento Grid */}
-      <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white">
+      <section className="bg-gradient-to-b from-slate-900 via-slate-900 to-black text-white">
         <div className="max-w-7xl mx-auto px-4 py-16">
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-4">Blog de Contabilidad</h1>
@@ -462,7 +462,7 @@ export const BlogPage = () => {
                   >
                     <div className="p-6">
                       <div className="flex items-center space-x-3 mb-4">
-                        <span className={`px-3 py-1 rounded-full text-white text-xs font-medium ${getCategoryInfo(post.category)?.color}`}>
+                        <span className={`px-3 py-1 rounded-full sm:text-[11px] text-white text-[clamp(0.6rem,1.5vw,0.8rem)] font-medium ${getCategoryInfo(post.category)?.color}`}>
                           {getCategoryInfo(post.category)?.name}
                         </span>
                         <span className="text-sm text-gray-500">{post.readTime}</span>
@@ -478,8 +478,8 @@ export const BlogPage = () => {
 
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-3">
-                          <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                            <span className="text-white font-bold text-sm">
+                          <div className="w-10 h-10 rounded-full items-center justify-center hidden 2xl:flex 2xl:bg-amber-200">
+                            <span className="text-black font-bold text-sm">
                               {post.author.split(' ').map(n => n[0]).join('')}
                             </span>
                           </div>

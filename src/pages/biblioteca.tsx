@@ -43,7 +43,7 @@ export function Biblioteca() {
             <div className="flex flex-col gap-4 md:gap-6">
               <h1 className="text-[clamp(1.8rem,4.5vw,3rem)] font-bold leading-tight">Biblioteca</h1>
               <p className="text-white/80">
-                Descarga materiales y libros de apoyo. Los archivos se descargan desde Google Drive.
+                Descarga materiales y libros de apoyo para potenciar tus habilidades.
               </p>
               <div className="flex flex-wrap gap-3 pt-1">
                 <Link
@@ -75,7 +75,7 @@ export function Biblioteca() {
         <div className="hidden lg:block">
           <Aside />
         </div>
-        <main className="p-4 sm:p-6 lg:p-8 text-white flex justify-center items-center flex-col w-full">
+        <main className="p-4 sm:p-6 lg:p-8 text-black flex justify-start items-center flex-col w-full">
           <section id="listado" className="w-full">
             <div className="container mx-auto px-6 md:px-8 py-10 md:py-16">
               {/* Controles */}
@@ -112,7 +112,7 @@ export function Biblioteca() {
                   {filtrados.map((libro, index) => (
                     <article
                       key={`${libro.url}-${index}`}
-                      className="bg-white/5 border border-black/10 rounded-2xl overflow-hidden flex flex-col"
+                      className="bg-white/5 border border-black/10 rounded-2xl overflow-hidden flex flex-col hover:scale-[1.02] transition-transform hover:shadow-lg hover:backdrop-blur-sm"
                     >
                       <div className="aspect-[4/3] w-full bg-white/5 flex items-center justify-center">
                         {libro.imagen ? (

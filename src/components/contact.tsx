@@ -50,7 +50,7 @@ export function ContactForm() {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div className="flex flex-col gap-2">
-            <label htmlFor="fullName" className="text-sm text-black/80">
+            <label htmlFor="fullName" className="text-sm text-black/80 ">
               Nombre completo
             </label>
             <input
@@ -60,7 +60,7 @@ export function ContactForm() {
               onChange={handleChange}
               required
               placeholder="Tu nombre y apellido"
-              className="px-4 py-2.5 rounded-lg bg-white text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
+              className="px-4 py-2.5 rounded-lg bg-white text-black border border-black/10 placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
             />
           </div>
 
@@ -76,7 +76,7 @@ export function ContactForm() {
               onChange={handleChange}
               required
               placeholder="tu@email.com"
-              className="px-4 py-2.5 rounded-lg bg-white text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
+              className="px-4 py-2.5 rounded-lg bg-white border border-black/10 text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
             />
           </div>
         </div>
@@ -92,7 +92,7 @@ export function ContactForm() {
               value={form.phone}
               onChange={handleChange}
               placeholder="+51 999 999 999"
-              className="px-4 py-2.5 rounded-lg bg-white text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
+              className="px-4 py-2.5 rounded-lg bg-white border border-black/10 text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
             />
           </div>
 
@@ -105,7 +105,7 @@ export function ContactForm() {
               name="course"
               value={form.course}
               onChange={handleChange}
-              className="px-4 py-2.5 rounded-lg bg-white text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
+              className="px-4 py-2.5 rounded-lg bg-white border border-black/10  text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
             >
               <option value="">Selecciona un curso</option>
               <option value="Peritaje Contable">Peritaje Contable</option>
@@ -128,7 +128,7 @@ export function ContactForm() {
             required
             rows={5}
             placeholder="Cuéntanos qué información necesitas o en qué curso estás interesado/a"
-            className="px-4 py-2.5 rounded-lg bg-white text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
+            className="px-4 py-2.5 rounded-lg bg-white border border-black/10 text-black placeholder:text-black/60 focus:outline-none focus:ring-2 focus:ring-[#ffb403]"
           />
         </div>
 
@@ -136,7 +136,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={status === "submitting"}
-            className="px-5 py-2.5 rounded-lg text-sm font-medium bg-[#ffb403] text-black hover:scale-[1.02] transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb403]"
+            className="px-5 py-2.5 rounded-lg text-sm font-medium bg-[#ffb403]  text-black hover:scale-[1.02] transition-transform focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ffb403]"
           >
             {status === "submitting" ? "Enviando…" : "Solicitar información"}
           </button>

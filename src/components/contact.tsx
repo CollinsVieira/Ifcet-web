@@ -46,11 +46,11 @@ export function ContactForm() {
     <div className="w-full max-w-3xl mx-auto">
       <form
         onSubmit={handleSubmit}
-        className="grid grid-cols-1 gap-4 bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-white/10"
+        className="grid grid-cols-1 gap-4 bg-white/5 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-black/10"
       >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
           <div className="flex flex-col gap-2">
-            <label htmlFor="fullName" className="text-sm text-white/80">
+            <label htmlFor="fullName" className="text-sm text-black/80">
               Nombre completo
             </label>
             <input
@@ -65,7 +65,7 @@ export function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-sm text-white/80">
+            <label htmlFor="email" className="text-sm text-black/80">
               Correo electrónico
             </label>
             <input
@@ -83,7 +83,7 @@ export function ContactForm() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
-            <label htmlFor="phone" className="text-sm text-white/80">
+            <label htmlFor="phone" className="text-sm text-black/80">
               Teléfono (opcional)
             </label>
             <input
@@ -97,7 +97,7 @@ export function ContactForm() {
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="course" className="text-sm text-white/80">
+            <label htmlFor="course" className="text-sm text-black/80">
               Curso de interés (opcional)
             </label>
             <select
@@ -117,7 +117,7 @@ export function ContactForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="text-sm text-white/80">
+          <label htmlFor="message" className="text-sm text-black/80">
             Mensaje
           </label>
           <textarea

@@ -36,7 +36,7 @@ export function Header2() {
               <img src={logoBlanco} alt="Logo" className="h-6 w-auto" />
             </Link>
             <button
-              className="flex-shrink-0"
+              className="flex-shrink-0 text-white"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? (

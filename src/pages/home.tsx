@@ -3,6 +3,7 @@ import { HeroSlider } from "../components/hero-slider";
 import { Aside } from "../components/aside";
 import { Beneficios } from "../components/beneficios";
 import Convenios from "../components/convenios";
+import Opiniones from "../components/opiniones";
 
 export function Home() {
   return (
@@ -38,12 +39,15 @@ export function Home() {
           <section className="bg-white flex flex-col md:gap-y-4">
             <Convenios />
           </section>
+          {/* Opiniones en ancho completo, fuera del grid */}
+          <section className="bg-white flex flex-col md:gap-y-4">
+            <Opiniones />
+          </section>
         </main>
         <aside className="col-span-1 hidden lg:block">
           <Aside />
         </aside>
       </div>
-
     </div>
   );
 }

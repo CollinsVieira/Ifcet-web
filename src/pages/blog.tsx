@@ -124,6 +124,16 @@ export const BlogPage = () => {
           <main className="col-span-1 lg:col-span-1 w-full overflow-hidden">
             {/* Contenido del artículo */}
             <div className="bg-white rounded-lg shadow-sm p-8 mx-4 my-8">
+              {selectedPost.image && (
+                <div className="mb-6">
+                  <img
+                    src={selectedPost.image}
+                    alt={selectedPost.title}
+                    className="w-full max-h-[520px] object-cover rounded-lg"
+                    loading="lazy"
+                  />
+                </div>
+              )}
               <div className="prose prose-lg max-w-none">
                 {selectedPost.content.split('\n\n').map((paragraph, index) => {
                   if (paragraph.startsWith('## ')) {
@@ -234,6 +244,16 @@ export const BlogPage = () => {
                         onClick={() => handlePostClick(post)}
                         className="bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors cursor-pointer group"
                       >
+                        {post.image && (
+                          <div className="w-full h-36 mb-3 overflow-hidden rounded-md">
+                            <img
+                              src={post.image}
+                              alt={post.title}
+                              className="w-full h-full object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        )}
                         <div className="flex items-center space-x-2 mb-3">
                           <span className={`px-2 py-1 rounded-full text-white text-xs font-medium ${getCategoryInfo(post.category)?.color}`}>
                             {getCategoryInfo(post.category)?.name}
@@ -283,6 +303,16 @@ export const BlogPage = () => {
                           {index + 1}
                         </div>
                       </div>
+                      {post.image && (
+                        <div className="flex-shrink-0">
+                          <img
+                            src={post.image}
+                            alt={post.title}
+                            className="w-12 h-12 rounded-lg object-cover"
+                            loading="lazy"
+                          />
+                        </div>
+                      )}
                       <div className="flex-1 min-w-0">
                         <h3 className="font-medium text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2">
                           {post.title}
@@ -332,6 +362,17 @@ export const BlogPage = () => {
                   index === 0 ? 'md:col-span-2 md:row-span-2' : ''
                 }`}
               >
+                {post.image && (
+                  <div className={`relative w-full overflow-hidden rounded-xl mb-4 ${index === 0 ? 'h-56 md:h-72' : 'h-40'}`}>
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="absolute inset-0 w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  </div>
+                )}
                 <div className={`w-12 h-12 rounded-xl mb-4 ${getCategoryInfo(post.category)?.color} flex items-center justify-center`}>
                   <span className="text-white font-bold text-lg">
                     {getCategoryInfo(post.category)?.name.charAt(0)}
@@ -460,6 +501,16 @@ export const BlogPage = () => {
                     onClick={() => handlePostClick(post)}
                     className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow cursor-pointer group"
                   >
+                    {post.image && (
+                      <div className="w-full h-48 overflow-hidden rounded-t-xl">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                     <div className="p-6">
                       <div className="flex items-center space-x-3 mb-4">
                         <span className={`px-3 py-1 rounded-full sm:text-[11px] text-white text-[clamp(0.6rem,1.5vw,0.8rem)] font-medium ${getCategoryInfo(post.category)?.color}`}>

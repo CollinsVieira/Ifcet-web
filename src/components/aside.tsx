@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const DEFAULT_VIDEO_URL = "/public/gif-1.mp4";
+const DEFAULT_VIDEO_URL = "https://www.ifcet.com.pe/wp-content/uploads/2025/08/gif-1.mp4";
 
 interface AsideProps {
   videoUrl?: string;

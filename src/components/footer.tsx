@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 export function FooterComponent() {
   return (
-    <footer className="bg-[#021d4f] text-white">
+    <footer className="bg-[#060a17] text-white">
       {/* Sección superior - Tres columnas */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

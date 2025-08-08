@@ -1,5 +1,5 @@
 import { FooterComponent } from "./footer";
-import { Header } from "./header";
+import { Header2 } from "./header2";
 import { WhatsAppButton } from "./whatsapp-button";
 
 interface LayoutProps {
@@ -9,7 +9,7 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Header />
+      <Header2 />
       <main>{children}</main>
       <FooterComponent /> 
       <WhatsAppButton />

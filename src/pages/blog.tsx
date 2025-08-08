@@ -76,7 +76,7 @@ export const BlogPage = () => {
     }
 
     return (
-      <div className="w-full pt-[70px] md:pt-[110px]">
+      <div className="w-full">
         {/* Header del artículo */}
         <div className="bg-white shadow-sm border-b">
           <div className="max-w-4xl mx-auto px-4 py-6">
@@ -311,7 +311,7 @@ export const BlogPage = () => {
   }
 
   return (
-    <div className="w-full pt-[70px] md:pt-[110px]">
+    <div className="w-full">
       {/* Hero Section con Bento Grid */}
       <section className="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white">
         <div className="max-w-7xl mx-auto px-4 py-16">

@@ -69,7 +69,7 @@ export function Aside() {
         <div className="px-4">
           <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
             {/* Header de la publicidad */}
-            <div className="bg-gradient-to-r from-[#101fd2] to-[#ffbb01] px-4 py-3">
+            <div className="bg-[#101fd2] px-4 py-3">
               <div className="flex items-center justify-between">
                 <h3 className="text-white font-bold text-sm">PUBLICIDAD</h3>
                 <div className="flex items-center space-x-2">

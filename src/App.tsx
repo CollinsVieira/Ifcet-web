@@ -7,6 +7,7 @@ import { CursosPage } from "./pages/cursos";
 import { Noticias } from "./pages/noticias";
 import { TestSticky } from "./pages/test-sticky";
 import { BlogPage } from "./pages/blog";
+import { ContactoPage } from "./pages/contacto";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/test-sticky" element={<TestSticky />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contacto" element={<ContactoPage />} />
         </Routes>
       </Layout>
     </Router>

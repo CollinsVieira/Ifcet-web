@@ -45,7 +45,7 @@ export function Home() {
           </section>
         </main>
         <aside className="col-span-1 hidden lg:block">
-          <Aside videoUrl="src/assets/gif-1.mp4" />
+          <Aside />
         </aside>
       </div>
     </div>

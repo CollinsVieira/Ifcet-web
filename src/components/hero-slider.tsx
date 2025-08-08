@@ -1,136 +1,230 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "./swipermodules.css";
-import personas from "../assets/4-personas.webp";
+import virtual from "../assets/virtual.webp";
 import personasMobile from "../assets/4-personas-mobile.webp";
 import personapc from "../assets/personapc.webp";
 import { Link } from "react-router-dom";
 
-const destacados = [
+type SlideCta = {
+  label: string;
+  to?: string; // internal link
+  href?: string; // external link or anchor
+  variant?: "primary" | "secondary";
+};
+
+type Slide = {
+  id: string;
+  title: string;
+  description: string;
+  desktopImage?: string;
+  mobileImage?: string;
+  ctas: SlideCta[];
+  backgroundClass?: string;
+  imagePosition?: "left" | "right"; // Nueva propiedad para controlar la posición de la imagen
+};
+
+const slides: Slide[] = [
   {
-    title: "Peritaje Contable",
-    link: "",
+    id: "inscribete",
+    title: "Impulsa tu carrera en Contabilidad y Finanzas",
+    description:
+      "Programas prácticos guiados por expertos. Certifícate y avanza a tu ritmo.",
+    desktopImage: personapc,
+    mobileImage: personapc,
+    imagePosition: "right", // Imagen a la derecha
+    ctas: [
+      { label: "Inscribirme", to: "/cursos", variant: "primary" },
+      {
+        label: "Solicitar información",
+        href: "/contacto#contacto",
+        variant: "secondary",
+      },
+    ],
+    backgroundClass:
+      "bg-gradient-to-b from-indigo-950 via-indigo-950 to-slate-950",
   },
   {
-    title: "Contabilidad de Costos",
-    link: "",
+    id: "docentes",
+    title: "Aprende con docentes expertos del Perú",
+    description:
+      "Contenidos actualizados, casos reales y acompañamiento personalizado.",
+    desktopImage: personasMobile,
+    mobileImage: personasMobile,
+    imagePosition: "left", // Imagen a la izquierda
+    ctas: [
+      { label: "Ver cursos", to: "/cursos", variant: "primary" },
+      { label: "Contáctanos", href: "/contacto#contacto", variant: "secondary" },
+    ],
+    backgroundClass: "bg-gradient-to-b from-blue-900 via-blue-900 to-black",
   },
   {
-    title: "Contabilidad Comercial",
-    link: "",
-  },
-  {
-    title: "Presupuesto Público",
-    link: "",
+    id: "sin-imagen",
+    title: "Educación que transforma tu futuro",
+    description:
+      "Clases en vivo, modalidad online y certificación al finalizar.",
+    desktopImage: virtual,
+    mobileImage: virtual,
+    imagePosition: "right", // Imagen a la derecha
+    ctas: [
+      { label: "Inscribirme", to: "/cursos", variant: "primary" },
+      {
+        label: "Solicitar información",
+        href: "/contacto#contacto",
+        variant: "secondary",
+      },
+    ],
+    backgroundClass: "bg-gradient-to-b from-slate-900 via-slate-900 to-black",
   },
 ];
 
 export function HeroSlider() {
   return (
-    <div className="h-[calc(100vh-110px)] md:h-[75vh] w-full overflow-x-hidden">
+    <div className="h-[calc(100vh-110px)] md:h-[75vh]  overflow-x-hidden ">
       <Swiper
-        pagination={{
-          dynamicBullets: true,
-          clickable: true,
-        }}
-        navigation={true}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
+        pagination={{ dynamicBullets: true, clickable: true }}
+        navigation
+        autoplay={{ delay: 5000, disableOnInteraction: true }}
         modules={[Pagination, Navigation, Autoplay]}
         className="h-full w-full"
-        loop={true}
+        loop
       >
-        <SwiperSlide>
-          <section className="bg-[#101fd2] h-full w-full">
-            <div
-              className="w-full h-full flex lg:justify-center items-center flex-col text-white gap-y-4
-             md:flex-row-reverse"
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <section
+              className={`${
+                slide.backgroundClass ??
+                "bg-gradient-to-b from-slate-900 to-black"
+              } h-full w-full 2xl:px-60`}
             >
-              <img
-                src={personapc}
-                alt="chica con una computadora"
-                className="order-2 lg:object-contain sm:object-cover"
-              />
-              <div
-                className="flex flex-col gap-y-4 md:text-left 
-              md:w-[30%] md:p-10 md:bg-white/15 md:rounded-2xl md:border-1 md:border-white/30"
-              >
-                <h1 className="text-4xl font-bold md:order-2">
-                  Expertos que transforman el conocimiento
-                </h1>
-                <p className="text-lg md:order-3">
-                  Cursos especializados en tributación, finanzas y contabilidad
-                </p>
-                <a
-                  href="#"
-                  className="text-sm hidden md:block bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit hover:scale-105 transition-all duration-300"
-                >
-                  ¡Contactanos!
-                </a>
+              <div className="w-full h-full grid md:grid-cols-2 items-center gap-6 px-6 md:px-10 text-white">
+                {/* Contenido dinámico basado en imagePosition */}
+                {[
+                  // Renderizamos el contenido en el orden correcto según imagePosition
+                  ...(slide.imagePosition === "left"
+                    ? [
+                        // Imagen a la izquierda
+                        <div key="image" className="relative h-[36vh] md:h-[60vh] flex items-center justify-center">
+                          {slide.desktopImage || slide.mobileImage ? (
+                            <>
+                              <img
+                                src={slide.desktopImage ?? slide.mobileImage}
+                                alt="Ilustración educativa del curso"
+                                className="hidden md:block h-full w-full object-contain"
+                              />
+                              <img
+                                src={slide.mobileImage ?? slide.desktopImage}
+                                alt="Ilustración educativa del curso"
+                                className="md:hidden h-full w-full object-contain"
+                              />
+                            </>
+                          ) : (
+                            <div className="h-full w-full flex items-center justify-center border border-dashed border-white/30 rounded-xl">
+                              {/* Insertar imágen aquí */}
+                            </div>
+                          )}
+                        </div>,
+                        // Contenido a la derecha
+                        <div key="content" className="flex flex-col gap-4 md:gap-6 max-w-xl md:ml-auto justify-center items-center 2xl:items-end 2xl:text-right">
+                          <h1 className="text-[clamp(1.6rem,4.5vw,3rem)] font-bold leading-tight">
+                            {slide.title}
+                          </h1>
+                          <p className="text-base md:text-lg text-white/90">
+                            {slide.description}
+                          </p>
+                          <div className="flex flex-wrap gap-3 pt-2">
+                            {slide.ctas.map((cta) => {
+                              const baseBtn =
+                                "px-5 py-2.5 rounded-lg text-sm font-medium transition-transform duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
+                              const primary =
+                                "bg-[#ffb403] text-black hover:scale-[1.03] focus-visible:ring-[#ffb403]";
+                              const secondary =
+                                "bg-white/10 text-white border border-white/30 hover:bg-white/15 hover:scale-[1.02] focus-visible:ring-white";
+
+                              const className = `${baseBtn} ${
+                                cta.variant === "secondary" ? secondary : primary
+                              }`;
+
+                              if (cta.to) {
+                                return (
+                                  <Link key={cta.label} to={cta.to} className={className}>
+                                    {cta.label}
+                                  </Link>
+                                );
+                              }
+                              return (
+                                <a key={cta.label} href={cta.href} className={className}>
+                                  {cta.label}
+                                </a>
+                              );
+                            })}
+                          </div>
+                        </div>,
+                      ]
+                    : [
+                        // Contenido a la izquierda (por defecto)
+                        <div key="content" className="flex flex-col gap-4 md:gap-6 max-w-xl 2xl:text-left 2xl:text-pretty">
+                          <h1 className="text-[clamp(1.6rem,4.5vw,3rem)] font-bold leading-tight">
+                            {slide.title}
+                          </h1>
+                          <p className="text-base md:text-lg text-white/90">
+                            {slide.description}
+                          </p>
+                          <div className="flex flex-wrap gap-3 pt-2 2xl:justify-start justify-center ">
+                            {slide.ctas.map((cta) => {
+                              const baseBtn =
+                                "px-5 py-2.5 rounded-lg text-sm font-medium transition-transform duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent";
+                              const primary =
+                                "bg-[#ffb403] text-black hover:scale-[1.03] focus-visible:ring-[#ffb403]";
+                              const secondary =
+                                "bg-white/10 text-white border border-white/30 hover:bg-white/15 hover:scale-[1.02] focus-visible:ring-white";
+
+                              const className = `${baseBtn} ${
+                                cta.variant === "secondary" ? secondary : primary
+                              }`;
+
+                              if (cta.to) {
+                                return (
+                                  <Link key={cta.label} to={cta.to} className={className}>
+                                    {cta.label}
+                                  </Link>
+                                );
+                              }
+                              return (
+                                <a key={cta.label} href={cta.href} className={className}>
+                                  {cta.label}
+                                </a>
+                              );
+                            })}
+                          </div>
+                        </div>,
+                        // Imagen a la derecha
+                        <div key="image" className="relative h-[36vh] md:h-[60vh] flex items-center justify-center">
+                          {slide.desktopImage || slide.mobileImage ? (
+                            <>
+                              <img
+                                src={slide.desktopImage ?? slide.mobileImage}
+                                alt="Ilustración educativa del curso"
+                                className="hidden md:block h-full w-full object-contain"
+                              />
+                              <img
+                                src={slide.mobileImage ?? slide.desktopImage}
+                                alt="Ilustración educativa del curso"
+                                className="md:hidden h-full w-full object-contain"
+                              />
+                            </>
+                          ) : (
+                            <div className="h-full w-full flex items-center justify-center border border-dashed border-white/30 rounded-xl">
+                              {/* Insertar imágen aquí */}
+                            </div>
+                          )}
+                        </div>,
+                      ]),
+                ]}
               </div>
-              <a
-                href="#"
-                className="text-sm bg-[#ffb403] text-white px-4 py-2 rounded-lg order-4 w-fit self-center md:hidden"
-              >
-                ¡Contactanos!
-              </a>
-            </div>
-          </section>
-        </SwiperSlide>
-        <SwiperSlide>
-          <section className="h-full w-full bg-[#101fd2] flex justify-center items-center relative">
-            <div className="md:block hidden">
-              {/* imagen para desktop */}
-              <img
-                src={personas}
-                alt="4 docentes"
-                className="w-full h-full object-contain object-bottom absolute inset-0"
-              />
-            </div>
-            <div className="md:hidden flex justify-center items-center flex-col gap-y-4 text-white">
-              <h1 className="text-4xl font-bold">
-                Conoce nuestros cursos destacados
-              </h1>
-              <p className="text-lg">Especializate con los mejores del Perú.</p>
-              {/* imagen para mobile */}
-              <img
-                src={personasMobile}
-                alt="2 docentes"
-                className="w-full h-full object-contain pl-4"
-              />
-              <a
-                href="#"
-                className="text-sm bg-[#ffb403] text-white px-4 py-2 rounded-lg"
-              >
-                ¡Conoce más!
-              </a>
-            </div>
-            <div className="md:flex flex-row gap-x-4 pb-10 items-end justify-between h-full relative z-10 px-10 w-full hidden">
-              {destacados.map((destacado, index) => (
-                <div
-                  className="flex flex-col gap-y-2 flex-1 items-center"
-                  key={index}
-                >
-                  <div className="w-fit flex flex-col bg-black/50 px-6 py-3 rounded-lg border-white border-1 text-center">
-                    <h1 className="text-white text-pretty">
-                      {destacado.title}
-                    </h1>
-                  </div>
-                  <div className="w-full flex justify-center mt-2">
-                    <Link
-                      to={destacado.link}
-                      className="bg-white text-black px-4 py-1 rounded-lg border-black text-sm"
-                    >
-                      Más información
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-        </SwiperSlide>
+            </section>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

@@ -1,5 +1,4 @@
 import { Aside } from "../components/aside";
-import { AnimatedTestimonials } from "../components/ui/animated-testimonials";
 import { Link } from "react-router-dom";
 
 const testimonials = [

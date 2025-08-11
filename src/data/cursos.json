@@ -1,15 +1,15 @@
 [
   {
-    "img": "https://www.ifcet.com.pe/wp-content/uploads/2024/11/ECE.jpg",
-    "title": "Curso Especializado en Contabilidad Minera",
-    "duration": "10 ",
-    "docente": "Juan Perez",
-    "Inicio": "10 de Julio",
-    "Horario": "10:00 a.m. - 12:00 p.m.",
-    "lessons": 6,
-    "students": 15,
-    "hours": "10 ",
-    "enlace": "https://wa.link/1eucxp"
+    "img": "../src/assets/ACT.jpeg",
+    "title": "Curso en Asistente Contable Tributario",
+    "duration": "1",
+    "docente": "CPC. William Mendoza Tarrillo",
+    "Inicio": "12 de Agosto",
+    "Horario": "07:00 p.m.",
+    "lessons": 1,
+    "students": 23,
+    "hours": "2 ",
+    "enlace": "https://wa.link/e08zhh"
   },
   {
     "img": "https://www.ifcet.com.pe/wp-content/uploads/2024/12/CCNIFF.jpg",

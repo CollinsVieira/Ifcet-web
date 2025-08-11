@@ -63,6 +63,12 @@ export function Header2() {
 
             <nav className="flex items-center space-x-8">
               <Link
+                to="/"
+                className="text-white hover:text-yellow-300 transition-colors font-medium"
+              >
+                Inicio
+              </Link>
+              <Link
                 to="/docentes"
                 className="text-white hover:text-yellow-300 transition-colors font-medium"
               >
@@ -85,6 +91,12 @@ export function Header2() {
                 className="text-white hover:text-yellow-300 transition-colors font-medium"
               >
                 Contacto
+              </Link>
+              <Link
+                to="/contacto"
+                className="text-white hover:text-yellow-300 transition-colors font-medium"
+              >
+                Nosotros
               </Link>
               <Link
                 to="/aula-virtual"

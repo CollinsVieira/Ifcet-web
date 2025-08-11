@@ -2,7 +2,7 @@ import WhatsApp from "../utils/WhatsApp";
 
 export function WhatsAppButton() {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "51950268312"; // Número de WhatsApp de IFCET
+    const phoneNumber = "51983395385"; // Número de WhatsApp de IFCET
     const message = "Hola, me interesa conocer más sobre los cursos de IFCET";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, "_blank");

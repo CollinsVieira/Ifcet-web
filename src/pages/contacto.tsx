@@ -55,14 +55,17 @@ export function ContactoPage() {
                 <div className="flex flex-col gap-6 justify-center bg-white/5 border border-black/10 rounded-xl p-4">
                   <h2 className="text-2xl md:text-3xl font-bold">Información de contacto</h2>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-black/90">
-                    <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <div className="bg-black/5 border border-black/10 rounded-xl p-4 sm:col-span-2">
                       <h3 className="font-semibold">Teléfonos</h3>
+                      <p className="text-sm mt-2">+51 983 395 385</p>
+                      <p className="text-sm mt-2">+51 993 125 003</p>
                       <p className="text-sm mt-2">+51 950 268 312</p>
                     </div>
-                    <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <div className="bg-black/5 border border-black/10 rounded-xl p-4 sm:col-span-2">
                       <h3 className="font-semibold">Correos</h3>
                       <p className="text-sm mt-2">administracion@ifcet.com.pe</p>
                       <p className="text-sm">informes@ifcet.com.pe</p>
+                      <p className="text-sm">ifcet.chiclayo@gmail.com</p>
                     </div>
                     <div className="bg-black/5 border border-black/10 rounded-xl p-4 sm:col-span-2">
                       <h3 className="font-semibold">Ubicación</h3>
@@ -77,6 +80,24 @@ export function ContactoPage() {
                 </div>
               </div>
 
+              <div className="mt-4 bg-white/5 border border-black/10 rounded-xl p-4">
+                <h1 className="text-3xl font-bold">Conoce nuestros medios de pago</h1>
+                <p className="text-sm text-pretty text-justify">En <b>IFCET,</b> sabemos que un proceso de matrícula ágil es clave para tu desarrollo académico. Por ello, ofrecemos medios de <b>pago seguros</b>, flexibles y accesibles, <b>incluyendo transferencias bancarias, billeteras digitales, tarjetas y PayPal</b>. A continuación, te detallamos cada opción disponible para que elijas la que mejor se adapte a ti.</p>
+                <div className="flex flex-col gap-4 pt-4">
+                  <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <h3 className="font-semibold">Pagos por Yape y Plin</h3>
+                  </div>
+                  <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <h3 className="font-semibold">Transferencia bancaria o depósito</h3>
+                  </div>
+                  <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <h3 className="font-semibold">Pago con tarjeta – Débito o Crédito</h3>
+                  </div>
+                  <div className="bg-black/5 border border-black/10 rounded-xl p-4">
+                    <h3 className="font-semibold">Pago desde el extranjero – Paypal</h3>
+                  </div>
+                </div>
+              </div>
               <div className="mt-12">
                 <div className="rounded-2xl overflow-hidden border border-black/10">
                   <iframe

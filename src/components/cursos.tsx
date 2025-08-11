@@ -32,7 +32,7 @@ export function Cursos() {
               spaceBetween: 20,
             },
             1280: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
               spaceBetween: 20,
             },
             1536: {

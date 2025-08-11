@@ -8,6 +8,8 @@ import { Noticias } from "./pages/noticias";
 import { TestSticky } from "./pages/test-sticky";
 import { BlogPage } from "./pages/blog";
 import { ContactoPage } from "./pages/contacto";
+import { ReembolsoPage } from "./pages/reembolso";
+
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/test-sticky" element={<TestSticky />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
+          <Route path="/politica-de-reembolsos" element={<ReembolsoPage />} />
+          
         </Routes>
       </Layout>
     </Router>
